@@ -10,8 +10,8 @@ classifiers = [
 ]
 dependencies = [
     "winzy",
-    "winsay",
-    "dateutils",
+    "python-dateutil",
+    'winsay ; platform_system == "Windows"',
 ]
 
 [project.urls]
