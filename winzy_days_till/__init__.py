@@ -24,7 +24,7 @@ class HelloWorld:
             parsed_date = dp.parse(" ".join(args.datetext), fuzzy=True)
             daysremaining = (parsed_date - datetime.today()).days
             if args.say:
-                os.system("say {0} days remaining to {1}".format(daysremaining, parsed_date))
+                os.system("say {0} days remaining to {1}".format(daysremaining, parsed_date.strftime("%d %B %Y")))
             print(daysremaining)
         except Exception as ex:
             print(ex)
