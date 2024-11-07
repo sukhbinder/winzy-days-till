@@ -17,7 +17,19 @@ pip install winzy-days-till
 ```
 ## Usage
 
-Usage instructions go here.
+To use just type
+
+```bash
+winzy days 1 jan 2025
+```
+This will print out the days.
+
+To make it announce this, use the following command
+
+```bash
+winzy days 1 jan 2025 -s "--days-- days remaining to New year!"
+```
+This will announce the text who you have supplied. `--days--` is a special keyword for days. This will be replaced for no of days remaining. If the `--days--` is not included in the message then a generic announcement is made ignoring user's text.
 
 ## Development
 
