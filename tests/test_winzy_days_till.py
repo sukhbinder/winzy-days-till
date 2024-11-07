@@ -9,8 +9,8 @@ def test_create_parser():
 
     assert parser is not None
 
-    result = parser.parse_known_args(["2022-01-01", "--say"])[0]
-    assert result.say is True
+    result = parser.parse_known_args(["2022-01-01", "--say", "hello"])[0]
+    assert result.say == "hello"
     assert result.datetext == ["2022-01-01"]
 
 
